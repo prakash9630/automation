@@ -1,3 +1,4 @@
+import 'package:automation/app/constants/api_constants.dart';
 import 'package:get/get.dart';
 import 'storage_service.dart';
 
@@ -7,7 +8,7 @@ class NetworkConnection extends GetConnect {
   @override
   void onInit() {
     // Base URL Setup
-    baseUrl = 'https://api.yourdomain.com/v1'; // Change this to your base URL
+    baseUrl = ApiConstants.baseUrl; // Change this to your base URL
     timeout = const Duration(seconds: 30);
 
     // Request Modifier: Attach Token
